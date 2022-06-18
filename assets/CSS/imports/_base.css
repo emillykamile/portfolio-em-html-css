@@ -1,0 +1,112 @@
+@font-face {
+    font-family: roboto;
+    src: url('../../CSS/fonts/roboto.ttf');
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    background-image: url('../../img/background.png');
+}
+
+nav {
+    background: #F65D1E;
+    border-radius: 0 0 1rem 1rem;
+
+}
+
+nav ul li {
+    display: block;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    padding: 1.5rem 1rem;
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a:after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #FFFFFF;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: width 0.3s;
+
+}
+
+nav ul li a:hover:after,
+nav ul li a.active:after {
+  width: 100%;
+}
+
+section.intro {
+    margin: 4rem 0;
+}
+section.intro .devices {
+    width: 100%;
+}
+
+h1 {
+    margin: 0.7rem 0;
+
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+section.skills {
+    margin: 5rem 0;
+}
+
+section.skills ul li {
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 100rem;
+    margin: 0.5rem 0;
+}
+
+section.skills ul li span {
+    color: #000;
+    background:#F65D1E;
+    border-radius: 100rem;
+    padding: 0.3rem 1rem;
+    display: block;
+    font-size: 0.9rem;
+    transition: width 0.3s;
+}
+
+section.skills ul li span:hover {
+    width: 100% !important;
+}
+
+footer {
+    background: #F65D1E;
+    padding: 2rem 0;
+    color: #FFF;
+    text-align: center;
+    border-radius: 1rem 1rem 0 0;
+
+}
+
+footer p {
+    margin: 0;
+}
+
+section.contact {
+    margin: 3rem 0;
+}
+
+input,
+textarea {
+    display: block;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    border: 1px solid #c3c3c3;
+    width: -webkit-fill-available;
+}
